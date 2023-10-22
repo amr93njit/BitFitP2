@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/formLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many hours did you sleep last night?"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/hoursSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:thumbTint="#0073e6"
+        android:max="24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How did you feel this morning? (1-10)"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/feelingSlider"
+        android:layout_width="match_parent"
+        android:thumbTint="#0073e6"
+        android:layout_height="wrap_content"
+        android:max="10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Any other notes?"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/notesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter notes here" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date:"
+        android:textSize="18sp" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:calendarTextColor="#0073e6"
+        android:yearListSelectorColor="#0073e6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0073e6"
+        android:text="SUBMIT" />
+
+    </LinearLayout>
+</ScrollView>
