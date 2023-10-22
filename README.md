@@ -2,7 +2,7 @@
 
 Submitted by: **Adam Ramsey**
 
-**Bitfit Part 2** is a health metrics app that allows users to track sleep.
+**Bitfit** is a health metrics app that allows users to track sleep.
 
 Time spent: **6** hours spent in total
 
